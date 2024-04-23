@@ -20,6 +20,10 @@ a {
   text-decoration: none;
 }
 
+button {
+  font-family: inherit;
+}
+
 .btn {
   --height: 60px;
   display: inline-block;
@@ -66,7 +70,8 @@ a {
 
 .header {
   padding-top: 30px;
-  min-height: 100vh;
+  /* min-height: 100vh; */
+  padding-bottom: 85px;
   background: var(--header-bg);
 }
 
@@ -235,7 +240,7 @@ a {
 
 /* Services */
 .service {
-  padding: 170px 0;
+  padding: 85px 0 170px;
 }
 
 .service__heading {
@@ -294,6 +299,10 @@ a {
 }
 
 /* How it works */
+
+.work {
+  padding-top: 100px;
+}
 
 .work__desc {
   max-width: 468px;
@@ -548,7 +557,7 @@ a {
 }
 
 .appointment {
-  padding: 85px 0;
+  padding: 85px 0 170px;
 }
 
 .appointment__inner {
@@ -560,4 +569,117 @@ a {
 .appointment-btn {
   margin-top: 38px;
 }
+.appointment-heading {
+  position: relative;
+  padding-bottom: 18px; 
+}
+.appointment-heading::after {
+  position: absolute;
+  display: block;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0 auto;
+  content: "";
+  width: 136px;
+  height: 2px;
+  background: #2E80CE;
+}
 
+.footer {
+  font-family: "Open Sans", sans-serif;
+  background: #10375C;
+  padding-top: 100px;
+}
+
+.footer__desc {
+  margin-top: 21px;
+  color: #A9B3BB;
+  font-family: "Open Sans";
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.75;
+}
+
+.footer__row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__heading {
+  margin-bottom: 20px;
+  color: #fff;
+  font-family: "Open Sans";
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.75; 
+}
+
+.footer__link {
+  color: #A9B3BB;
+  font-family: "Open Sans";
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.86; 
+}
+
+.footer__column:nth-child(1),
+.footer__column:nth-child(4){
+  width: 28.6%;
+}
+
+.footer__list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-bottom: 28px;
+}
+
+.footer-form {
+  margin-top: 10px;
+  display: flex;
+}
+
+.footer-form__input {
+  color: #fff;
+  outline: none;
+  width: 212px;
+  height: 46px;
+  border-radius: 4px;
+  padding: 0 10px;
+  border: 1px solid #406181;
+  background: transparent;
+}
+
+.footer-form__input::placeholder {
+  color: #9CA8B1;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.86; 
+}
+
+.footer-form__submit {
+  margin-left: 12px;
+  min-width: 108px;
+  border-radius: 4px;
+  --height: 46px;
+}
+
+.footer__social {
+  margin-bottom: 28px;
+}
+
+.footer__copyright {
+  padding: 28px 0 42px;
+  border-top: 1px solid  #406181;
+}
+
+.footer__copyright-text{
+  color: #AAB3BA;
+  text-align: center;
+  font-family: "Open Sans";
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.86; 
+}
